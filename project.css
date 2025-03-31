@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    background-color: #081b31 ;
+    text-align: center;
+    height: 10vh;
+    font-size: 50px;
+    color: white;
+    line-height: 10vh;
+}
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover{
+   
+    cursor: pointer;
+    background-color: #081b31;
+}
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.choices{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+    
+}
+.scoreboard{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:40px ;
+    font-size: 3rem;
+    gap: 4rem;
+
+}
+#userscore, #compscore{
+    padding: 10px;
+    border-radius: 10px;
+}
+.msg{
+    font-size: 2rem;
+    margin-top: 50px;
+    background-color: #081b31;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 30px;
+
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        height: 8vh;
+        line-height: 8vh;
+    }
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+    img {
+        height: 100px;
+        width: 100px;
+    }
+    .choices {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .scoreboard {
+        flex-direction: column;
+        font-size: 2rem;
+        gap: 2rem;
+    }
+    .msg {
+        font-size: 1.5rem;
+        margin-top: 30px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        height: 6vh;
+        line-height: 6vh;
+    }
+    .choice {
+        height: 90px;
+        width: 90px;
+    }
+    img {
+        height: 80px;
+        width: 80px;
+    }
+    .choices {
+        gap: 1rem;
+    }
+    .scoreboard {
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+    .msg {
+        font-size: 1rem;
+        margin-top: 20px;
+        padding: 5px;
+    }
+}
